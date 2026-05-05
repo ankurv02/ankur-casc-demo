@@ -1,0 +1,14 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: flag
+
+flag: showPremiumFeature
+flagType: string
+description: ""
+labels:
+
+availableValues:
+  - "false"
+  - ture
+
+isPermanent: false

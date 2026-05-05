@@ -1,0 +1,15 @@
+---
+apiVersion: featuremanagement.cloudbees.io/v1alpha1
+kind: target-group
+
+name: testUserTier
+
+description: 
+
+conditions:
+  allOf:
+    - property:
+        name: userTier
+        operator: in-array
+        operands:
+            - premium
